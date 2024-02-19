@@ -37,6 +37,7 @@ def main():
             print("\nYou have stopped for the night to rest.")
             print("Your camel is rested and happy!")
             natives_traveled = natives_traveled + random.randrange(7, 15)
+            camel_tiredness = 0
             print("The natives are " + str(miles_traveled - natives_traveled) + " miles behind you.\n")
         elif user_choice.upper() == "C":
             print("\nYour camel runs full speed ahead.")
@@ -96,5 +97,6 @@ def main():
         if not done and miles_traveled >= 200:
             print("You win!\n")
             break
+
 
 main()
